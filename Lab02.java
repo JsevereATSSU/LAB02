@@ -20,6 +20,53 @@ class Lab01
                    2 5
                    3 6
 */
+   
+	
+		public static void main(String[] args)
+		{
+			
+			int [] []mat= {{5,4,3},{2,3,4}};
+			
+			Rowsum(mat);
+			Rowcol(mat);
+		///////////////
+			
+			
+		
+			}	
+		
+				public static void Rowsum(int [] [] mat)
+				{
+					int sum=0;
+					
+					for(int col =0; col < 2; col++)
+					{
+						for(int row=0; row < 3; row++)
+						{
+							sum = sum + mat[col][row];
+							
+		
+				}
+						System.out.println(sum); 		
+						sum=0;
+					}
+				}
+					
+					public static void Rowcol(int [] [] mat)
+						{
+							int sum =0;
+							
+					for(int row=0; row < 3; row++)
+					{
+						
+					for(int col=0; col < 2; col++)
+					{
+					sum = sum + mat[col][row];
+					}			
+					System.out.println(sum); 		
+					sum=0;
+}
+}
+				}
 
     } 
-} 
